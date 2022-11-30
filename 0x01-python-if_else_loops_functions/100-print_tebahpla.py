@@ -1,4 +1,3 @@
 #!/usr/bin/python3
-import sys
-sys.stderr.write("and that piece of art is useful - Dora Korpar, 2015-10-19\n")
-sys.exit(1)
+for ch in reversed(range(97, 123)):
+    print("{:c}".format(ch if (ch % 2 == 0) else (ch - 32)), end='')
